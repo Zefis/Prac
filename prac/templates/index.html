@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carpintería en Aluminio AluMaster - Expertos en fabricación de estructuras de aluminio.">
+    <title>AluMaster - Carpintería en Aluminio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Enlace a archivo de estilos -->
+</head>
+<body>
+
+    <!-- Header con logo y menú de navegación -->
+    <header>
+        <div class="logo">
+            <img src="static/logo.png" alt="Logo de AluMaster">
+            <h1>AluMaster</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/quienes_somos">Quienes Somos</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/noticias">Noticias</a></li>
+                <li><a href="/contacto">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <section id="inicio" class="hero">
+        <h2>Bienvenido a AluMaster</h2>
+        <p>Expertos en carpintería de aluminio. Fabricamos ventanas, puertas y estructuras a medida con los más altos estándares de calidad y diseño.</p><br>
+        <a href="/contacto" class="btn">Contáctanos</a>
+        <a href="/servicios" class="btn">Ver servicios</a>
+    </section>
+
+    <!-- Sección de servicios -->
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-items">
+            <div class="service-item">
+                <h3>Ventanas de Aluminio</h3>
+                <p>Diseño y fabricación de ventanas de aluminio de alta calidad para hogares y oficinas.</p>
+            </div>
+            <div class="service-item">
+                <h3>Puertas de Aluminio</h3>
+                <p>Ofrecemos puertas modernas y resistentes, hechas a medida para cada cliente.</p>
+            </div>
+            <div class="service-item">
+                <h3>Estructuras Personalizadas</h3>
+                <p>Soluciones de carpintería en aluminio personalizadas para proyectos comerciales y residenciales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de testimonios y ventajas -->
+    <section id="testimonios" class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonials-items">
+            <div class="testimonial">
+                <p>"AluMaster instaló las ventanas de mi oficina, y el resultado fue excelente. La calidad y el diseño superaron mis expectativas." - Juan Pérez</p>
+            </div>
+            <div class="testimonial">
+                <p>"Gracias a su trabajo, tengo puertas resistentes y modernas en mi hogar. ¡Altamente recomendados!" - María González</p>
+            </div>
+            <div class="testimonial">
+                <p>"Profesionales y atentos a los detalles. Las estructuras que diseñaron para mi negocio quedaron perfectas." - Carlos López</p>
+            </div>
+        </div>
+        <h2>¿Por qué elegirnos?</h2>
+        <ul>
+            <li>Más de 5 años de experiencia en carpintería de aluminio.</li>
+            <li>Materiales de alta calidad y durabilidad.</li>
+            <li>Atención personalizada y proyectos a medida.</li>
+            <li>Garantía de satisfacción.</li>
+        </ul>
+    </section>
+
+    <!-- Sección de redes sociales -->
+    <section id="redes" class="social-media">
+        <h2>Síguenos en nuestras redes sociales</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com/AluMaster" target="_blank"><img src="static/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com/AluMaster" target="_blank"><img src="static/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/AluMaster" target="_blank"><img src="static/instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes un proyecto en mente? Contáctanos para obtener una cotización personalizada.</p>
+        <form action="/proceso" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text"name="nombre">
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer con información de derechos de autor -->
+    <footer>
+        <p>&copy; 2024 AluMaster. Todos los derechos reservados.</p>
+        <p>Dirección: Calle Ejemplo, 123, La Paz - Bolivia | Teléfono: +591 123 456789</p>
+    </footer>
+
+</body>
+</html>

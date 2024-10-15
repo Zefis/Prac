@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Enlace a archivo de estilos -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="static/logo.png" alt="Logo de AluMaster">
+            <h1>AluMaster</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/quienes_somos">Quienes Somos</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/noticias">Noticias</a></li>
+            <li><a href="/contacto">Contactanos</a></li>
+        </ul>
+
+    </header>
+    <h1>DATOS RECIVIDOS</h1>
+    <p>los datos recividos son: </p>
+    <p>Nombre: {{nombre}}</p>
+    <p>Correo Electronico: {{email}}</p>
+    <p>Mensaje: {{mensaje}}</p>
+    <br><br>
+    <header>
+            <h1>AluMaster</h1>
+        <h1>Gracias por su tiempo</h1>
+    </header>
+    
+</body>
+</html>

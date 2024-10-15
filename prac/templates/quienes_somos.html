@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce la historia, misión, visión y equipo de AluMaster.">
+    <title>AluMaster - Quiénes Somos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Enlace a archivo de estilos -->
+</head>
+<body>
+
+    <!-- Header con logo y menú de navegación -->
+    <header>
+        <div class="logo">
+            <img src="static/logo.png" alt="Logo de AluMaster">
+            <h1>AluMaster</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/quienes_somos">Quienes Somos</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/noticias">Noticias</a></li>
+            <li><a href="/contacto">Contactanos</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de historia de la empresa -->
+    <section id="historia" class="history">
+        <h2>Nuestra Historia</h2>
+        <p>Fundada en 2004, <strong>AluMaster</strong> nació con la visión de ser un referente en el sector de la carpintería de aluminio. A lo largo de los años, hemos evolucionado, creciendo desde un pequeño taller familiar hasta convertirnos en una empresa líder en el diseño y fabricación de ventanas, puertas y estructuras de aluminio. Gracias a nuestra pasión por el trabajo bien hecho y nuestro compromiso con la calidad, hemos logrado satisfacer a miles de clientes, tanto en el ámbito residencial como comercial.</p>
+    </section>
+
+    <!-- Sección de misión y visión -->
+    <section id="mision-vision" class="mission-vision">
+        <div class="mission">
+            <h3>Misión</h3>
+            <p>Nuestra misión es proporcionar productos de carpintería en aluminio de la más alta calidad, ofreciendo soluciones personalizadas que superen las expectativas de nuestros clientes. Nos enfocamos en combinar innovación, diseño y funcionalidad, asegurando siempre la satisfacción y fidelidad de quienes confían en nosotros.</p>
+        </div>
+        <div class="vision">
+            <h3>Visión</h3>
+            <p>Ser reconocidos a nivel nacional e internacional como una empresa líder en soluciones de carpintería en aluminio, destacándonos por nuestro enfoque en la calidad, el servicio al cliente y la sostenibilidad. Queremos ser un referente en el mercado, manteniéndonos a la vanguardia de las tendencias y tecnologías del sector.</p>
+        </div>
+    </section>
+
+    <!-- Sección del equipo de trabajo -->
+    <section id="equipo" class="team">
+        <h2>Nuestro Equipo</h2>
+        <p>Detrás de cada proyecto exitoso, hay un equipo de profesionales comprometidos con la excelencia. Conoce a algunos de los miembros clave de nuestro equipo de trabajo:</p>
+
+        <div class="team-members">
+            <!-- Miembro del equipo 1 -->
+            <div class="team-member">
+                <img src="static/OIP.jfif" alt="Nombre del miembro 1">
+                <h4>Juan Pérez</h4>
+                <p>Gerente General</p>
+                <p>Con más de 20 años de experiencia en la industria, Juan lidera AluMaster con pasión y dedicación. Es el encargado de supervisar cada proyecto y asegurar que los estándares de calidad se cumplan.</p>
+            </div>
+
+            <!-- Miembro del equipo 2 -->
+            <div class="team-member">
+                <img src="static/OIP.jfif" alt="Nombre del miembro 2">
+                <h4>María Gómez</h4>
+                <p>Jefa de Proyectos</p>
+                <p>María es una experta en gestión de proyectos. Con una visión estratégica, asegura que cada proyecto se ejecute de manera eficiente y cumpla con los plazos establecidos.</p>
+            </div>
+
+            <!-- Miembro del equipo 3 -->
+            <div class="team-member">
+                <img src="static/OIP.jfif" alt="Nombre del miembro 3">
+                <h4>Carlos López</h4>
+                <p>Diseñador Industrial</p>
+                <p>Carlos es el encargado de transformar las ideas en soluciones prácticas. Con su experiencia en diseño industrial, ha ayudado a desarrollar productos innovadores y estéticamente atractivos para nuestros clientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer con información de derechos de autor -->
+    <footer>
+        <p>&copy; 2024 AluMaster. Todos los derechos reservados.</p>
+        <p>Dirección: Calle Ejemplo, 123, La Paz - Bolivia | Teléfono: +591 123 456789</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/AluMaster" target="_blank"><img src="static/facebook-icon.png" alt="Facebook"></a>
+          <a href="https://www.twitter.com/AluMaster" target="_blank"><img src="static/twitter-icon.png" alt="Twitter"></a>
+          <a href="https://www.instagram.com/AluMaster" target="_blank"><img src="static/instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+</body>
+</html>

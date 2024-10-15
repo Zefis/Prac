@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Últimas noticias y novedades de AluMaster.">
+    <title>AluMaster - Noticias</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Enlace a archivo de estilos -->
+</head>
+<body>
+
+    <!-- Header con logo y menú de navegación -->
+    <header>
+        <div class="logo">
+            <img src="static/logo.png" alt="Logo de AluMaster">
+            <h1>AluMaster</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/quienes_somos">Quienes Somos</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/noticias">Noticias</a></li>
+                <li><a href="/contacto">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Noticias -->
+    <section id="noticias" class="news">
+        <h2>Últimas Noticias</h2>
+        <p>Mantente informado sobre las últimas novedades y proyectos de AluMaster.</p>
+
+        <!-- Noticia 1 -->
+        <article class="news-item">
+            <img src="static/R (1).jfif" alt="Imagen de noticia 1" class="news-image" width="600">
+            <div class="news-content">
+                <h3>Nueva Línea de Ventanas Energéticamente Eficientes</h3>
+                <p>AluMaster lanza una nueva línea de ventanas de aluminio diseñadas para mejorar la eficiencia energética de los hogares y oficinas. Estas ventanas ofrecen aislamiento térmico y acústico, ayudando a reducir el consumo de energía.</p>
+            </div>
+        </article>
+
+        <!-- Noticia 2 -->
+        <article class="news-item">
+            <img src="static/R (1).jfif" alt="Imagen de noticia 2" class="news-image" width="600">
+            <div class="news-content">
+                <h3>AluMaster Participa en la Feria de Construcción 2024</h3>
+                <p>El equipo de AluMaster estará presente en la Feria de Construcción 2024, mostrando sus últimas innovaciones en carpintería de aluminio. ¡Visítanos en nuestro stand para conocer más sobre nuestros productos!</p>
+            </div>
+        </article>
+
+        <!-- Noticia 3 -->
+        <article class="news-item">
+            <img src="static/R (1).jfif" alt="Imagen de noticia 3" class="news-image" width="600">
+            <div class="news-content">
+                <h3>Expansión de nuestra fábrica en La Paz</h3>
+                <p>AluMaster ha anunciado la ampliación de su fábrica en La Paz para aumentar su capacidad de producción. Esta expansión nos permitirá satisfacer la creciente demanda de nuestros productos en el mercado nacional.</p>
+            </div>
+        </article>
+
+    </section>
+
+    <!-- Footer con información de derechos de autor -->
+    <footer>
+        <p>&copy; 2024 AluMaster. Todos los derechos reservados.</p>
+        <p>Dirección: Calle Ejemplo, 123, La Paz - Bolivia | Teléfono: +591 123 456789</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/AluMaster" target="_blank"><img src="static/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com/AluMaster" target="_blank"><img src="static/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/AluMaster" target="_blank"><img src="static/instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
